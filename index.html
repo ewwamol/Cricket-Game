@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1> Bat Ball Stump Game</h1>
+
+    <div class="buttonConteiner">
+    <button id="b1" class="choise_button" onclick="
+     computerChoiseMsg=genComChoi();    
+     resultMsg=resultdis('bat',computerChoiseMsg);
+     showResut('bat',computerChoiseMsg,resultMsg);
+     ">
+     <img src="./img/bat.png" alt="bat image" id="img">
+    </button>
+    
+
+<button id="b2" class="choise_button" onclick=" 
+      computerChoiseMsg=genComChoi();
+      //console.log(`Computer Choice is ${computerChoise}`);//
+      resultMsg=resultdis('ball',computerChoiseMsg);
+      showResut('ball',computerChoiseMsg,resultMsg);
+     "><img src="./img/ball.png" alt="ball image" id="img">
+     </button>
+     
+     <button id="b3" class="choise_button" onclick=" 
+     computerChoiseMsg=genComChoi();
+     resultMsg=resultdis('Stump',computerChoiseMsg);
+     showResut('Stump',computerChoiseMsg,resultMsg);
+     ">
+     <img src="./img/stump.png" alt="Stump image" id="img"></button>
+    </div>
+      <div class="resetcon">
+     <button class="reset" onclick="localStorage.clear()
+     resetScore()
+     ">Reset</button>
+     </div>
+     <div class="scoreArea">
+     <h3 id="usermove"></h3>
+     <h3 id="computer-move"></h3>
+     <h3 id="result"></h3>
+     <h3 id="score"></h3>
+     </div>
+<script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+    text-align: center;
+    
+   }
+   .choise_button{
+    height: 100px;
+    width: 100px; 
+    border: none;
+    margin: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+   }
+   #img{
+    height: 75px;
+   }
+   
+   button{
+       background-color: rgb(164,212,130);
+   }
+   button:hover{
+       background-color: skyblue;
+       border-radius: 5px;
+   }
+   button:active{
+       background-color: red;
+   }
+   .resetcon{
+       display: flex;
+       justify-content: center;
+       margin-top: 20px;
+   }
+   .reset{
+       display: flex;
+       justify-content: center;
+       background-color: red;
+       border-radius: 3px;
+   }
+   .reset:hover{
+       background-color: azure;
+       border: 3px solid black;
+   }
+   .reset:active{
+       background-color: skyblue;
+   }
+   h1{
+    background-color: antiquewhite;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration:solid;
+    animation: h1 5s infinite;
+      
+   }
+ 
+   @keyframes h1 {
+    
+    0%{background-color: yellow}
+    50%{background-color: aqua;}
+    100%{background-color: bisque;}
+   }
+   .scoreArea{
+    background-color: cadetblue;
+   }
